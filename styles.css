@@ -1,0 +1,176 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #072310;
+    color: #333;
+}
+.delivery-options{
+    display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 800px;
+            padding: 20px;
+            /* background-color: #fff; */
+            /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+            /* border-radius: 10px; */
+}
+.delivery-options img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 80px;
+    margin: 0 auto;
+}
+.img-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+h2.menu-heading {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #a8200b;
+}
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ffd700;
+}
+
+.header {
+    background-color: #072310;
+    color: rgb(206, 206, 0);
+    padding: 20px;
+    text-align: center;
+}
+
+.header-container p {
+    margin: 5px 0;
+}
+.menu-heading{
+    color: rgb(168, 12, 12);
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.delivery-options ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.delivery-options li {
+    margin: 0 10px;
+}
+
+.menu {
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.menu-column {
+    flex: 1;
+    padding: 10px;
+    min-width: 250px;
+}
+
+/* Styling each pizza item without boxes */
+/* .pizza-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+} */
+
+.pizza-item h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.1em;
+    color: white;
+}
+
+.pizza-item p {
+    margin: 0 0 10px 0;
+    font-size: 0.95em;
+    color: white;
+}
+
+.price {
+    font-weight: bold;
+    color: white;
+   float: right;
+}
+
+.smash-menu, .crispy-bites, .drinks, .cervejas, .salada {
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-item {
+    margin-bottom: 15px;
+}
+
+.smash-menu .menu-item h3,
+.crispy-bites .menu-item h3,
+.drinks .menu-item p,
+.cervejas .menu-item p,
+.salada .menu-item h3 {
+    font-size: 1.1em;
+    color: white;
+}
+
+.smash-menu .menu-item p,
+.crispy-bites .menu-item p,
+.salada .menu-item p {
+    font-size: 0.95em;
+    color: white;
+}
+/* Responsive styles */
+@media (max-width: 600px) {
+    .menu-container {
+        flex-direction: column;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .icons-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .icons-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .icons-container img {
+        max-width: 60px;
+    }
+}
